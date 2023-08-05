@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "dev.vlab.com.local_coin.app-merged_res-7:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "dev.vlab.com.local_coin.app-main-1:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "dev.vlab.com.local_coin.app-merged_res-7:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "dev.vlab.com.local_coin.app-main-1:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "dev.vlab.com.local_coin.app-merged_res-7:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "dev.vlab.com.local_coin.app-main-1:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "dev.vlab.com.local_coin.app-merged_res-7:/drawable_launch_background.xml.flat",
+        "source": "dev.vlab.com.local_coin.app-main-1:/drawable/launch_background.xml"
+    },
+    {
+        "merged": "dev.vlab.com.local_coin.app-merged_res-7:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "dev.vlab.com.local_coin.app-main-1:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "dev.vlab.com.local_coin.app-merged_res-7:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "dev.vlab.com.local_coin.app-main-1:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "dev.vlab.com.local_coin.app-merged_res-7:/mipmap-xxhdpi_launcher_icon.png.flat",
+        "source": "dev.vlab.com.local_coin.app-main-1:/mipmap-xxhdpi/launcher_icon.png"
+    },
+    {
+        "merged": "dev.vlab.com.local_coin.app-merged_res-7:/mipmap-xhdpi_launcher_icon.png.flat",
+        "source": "dev.vlab.com.local_coin.app-main-1:/mipmap-xhdpi/launcher_icon.png"
+    }
+]

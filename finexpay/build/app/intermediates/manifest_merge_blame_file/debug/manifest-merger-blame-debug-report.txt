@@ -1,0 +1,514 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="dev.vlab.com.local_coin"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Administrative\Projects\finexpay\finexpay\android\app\src\main\AndroidManifest.xml:7:5-66
+15-->C:\Administrative\Projects\finexpay\finexpay\android\app\src\main\AndroidManifest.xml:7:22-64
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->C:\Administrative\Projects\finexpay\finexpay\android\app\src\main\AndroidManifest.xml:5:5-81
+16-->C:\Administrative\Projects\finexpay\finexpay\android\app\src\main\AndroidManifest.xml:5:22-78
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->C:\Administrative\Projects\finexpay\finexpay\android\app\src\main\AndroidManifest.xml:6:5-80
+17-->C:\Administrative\Projects\finexpay\finexpay\android\app\src\main\AndroidManifest.xml:6:22-77
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
+18-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+19-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-79
+19-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-76
+20    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+20-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-77
+20-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-74
+21
+22    <queries>
+22-->[:file_picker] C:\Administrative\Projects\finexpay\finexpay\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-17:15
+23        <intent>
+23-->[:file_picker] C:\Administrative\Projects\finexpay\finexpay\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-16:18
+24            <action android:name="android.intent.action.GET_CONTENT" />
+24-->[:file_picker] C:\Administrative\Projects\finexpay\finexpay\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-72
+24-->[:file_picker] C:\Administrative\Projects\finexpay\finexpay\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:21-69
+25
+26            <data android:mimeType="*/*" />
+26-->[:file_picker] C:\Administrative\Projects\finexpay\finexpay\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-44
+26-->[:file_picker] C:\Administrative\Projects\finexpay\finexpay\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:19-41
+27        </intent>
+28        <intent>
+28-->[androidx.media2:media2-session:1.2.1] C:\Users\user\.gradle\caches\transforms-3\ca996b8dba2f7d8920bebcc34b30902f\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:25:9-27:18
+29            <action android:name="android.media.browse.MediaBrowserService" />
+29-->[androidx.media2:media2-session:1.2.1] C:\Users\user\.gradle\caches\transforms-3\ca996b8dba2f7d8920bebcc34b30902f\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:26:13-79
+29-->[androidx.media2:media2-session:1.2.1] C:\Users\user\.gradle\caches\transforms-3\ca996b8dba2f7d8920bebcc34b30902f\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:26:21-76
+30        </intent>
+31        <intent>
+31-->[androidx.media2:media2-session:1.2.1] C:\Users\user\.gradle\caches\transforms-3\ca996b8dba2f7d8920bebcc34b30902f\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:28:9-30:18
+32            <action android:name="androidx.media2.session.MediaSessionService" />
+32-->[androidx.media2:media2-session:1.2.1] C:\Users\user\.gradle\caches\transforms-3\ca996b8dba2f7d8920bebcc34b30902f\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:29:13-82
+32-->[androidx.media2:media2-session:1.2.1] C:\Users\user\.gradle\caches\transforms-3\ca996b8dba2f7d8920bebcc34b30902f\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:29:21-79
+33        </intent>
+34        <intent>
+34-->[androidx.media2:media2-session:1.2.1] C:\Users\user\.gradle\caches\transforms-3\ca996b8dba2f7d8920bebcc34b30902f\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:31:9-33:18
+35            <action android:name="androidx.media2.session.MediaLibraryService" />
+35-->[androidx.media2:media2-session:1.2.1] C:\Users\user\.gradle\caches\transforms-3\ca996b8dba2f7d8920bebcc34b30902f\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:32:13-82
+35-->[androidx.media2:media2-session:1.2.1] C:\Users\user\.gradle\caches\transforms-3\ca996b8dba2f7d8920bebcc34b30902f\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:32:21-79
+36        </intent>
+37    </queries>
+38
+39    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+39-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
+39-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-78
+40    <uses-permission android:name="android.permission.VIBRATE" />
+40-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-66
+40-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-63
+41    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+41-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-81
+41-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-78
+42    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+42-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-79
+42-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-76
+43    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+43-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\user\.gradle\caches\transforms-3\8834d492c5e7c78ec9cfa9d409523b2d\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:26:5-82
+43-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\user\.gradle\caches\transforms-3\8834d492c5e7c78ec9cfa9d409523b2d\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:26:22-79
+44
+45    <permission
+45-->[androidx.core:core:1.10.1] C:\Users\user\.gradle\caches\transforms-3\b35a435a60cc457a6085f2b53d210b97\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+46        android:name="dev.vlab.com.local_coin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+46-->[androidx.core:core:1.10.1] C:\Users\user\.gradle\caches\transforms-3\b35a435a60cc457a6085f2b53d210b97\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+47        android:protectionLevel="signature" />
+47-->[androidx.core:core:1.10.1] C:\Users\user\.gradle\caches\transforms-3\b35a435a60cc457a6085f2b53d210b97\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+48
+49    <uses-permission android:name="dev.vlab.com.local_coin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+49-->[androidx.core:core:1.10.1] C:\Users\user\.gradle\caches\transforms-3\b35a435a60cc457a6085f2b53d210b97\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+49-->[androidx.core:core:1.10.1] C:\Users\user\.gradle\caches\transforms-3\b35a435a60cc457a6085f2b53d210b97\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+50
+51    <application
+52        android:name="android.app.Application"
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.10.1] C:\Users\user\.gradle\caches\transforms-3\b35a435a60cc457a6085f2b53d210b97\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+54        android:debuggable="true"
+55        android:icon="@mipmap/ic_launcher"
+56        android:label="LocalCoins"
+57        android:requestLegacyExternalStorage="true"
+58        android:usesCleartextTraffic="true" >
+59        <activity
+60            android:name="dev.vlab.com.local_coin.MainActivity"
+61            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+62            android:exported="true"
+63            android:hardwareAccelerated="true"
+64            android:launchMode="singleTop"
+65            android:theme="@style/LaunchTheme"
+66            android:windowSoftInputMode="adjustResize" >
+67
+68            <!--
+69                 Specifies an Android theme to apply to this Activity as soon as
+70                 the Android process has started. This theme is visible to the user
+71                 while the Flutter UI initializes. After that, this theme continues
+72                 to determine the Window background behind the Flutter UI.
+73            -->
+74            <meta-data
+75                android:name="io.flutter.embedding.android.NormalTheme"
+76                android:resource="@style/NormalTheme" />
+77
+78            <intent-filter>
+79                <action android:name="android.intent.action.MAIN" />
+80
+81                <category android:name="android.intent.category.LAUNCHER" />
+82            </intent-filter>
+83            <intent-filter>
+84                <action android:name="android.intent.action.MAIN" />
+85
+86                <category android:name="android.intent.category.LAUNCHER" />
+87            </intent-filter>
+88            <intent-filter>
+89                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+90
+91                <category android:name="android.intent.category.DEFAULT" />
+92            </intent-filter>
+93        </activity>
+94        <!--
+95             Don't delete the meta-data below.
+96             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+97        -->
+98        <meta-data
+99            android:name="flutterEmbedding"
+100            android:value="2" />
+101        <meta-data
+102            android:name="com.google.firebase.messaging.default_notification_channel_id"
+103            android:value="high_importance_channel" />
+104
+105        <service
+105-->[:cloud_firestore] C:\Administrative\Projects\finexpay\finexpay\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+106            android:name="com.google.firebase.components.ComponentDiscoveryService"
+106-->[:cloud_firestore] C:\Administrative\Projects\finexpay\finexpay\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+107            android:directBootAware="true"
+107-->[com.google.firebase:firebase-common:20.3.3] C:\Users\user\.gradle\caches\transforms-3\1b97e75904f8320891d9956a01f218a9\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
+108            android:exported="false" >
+108-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\user\.gradle\caches\transforms-3\8834d492c5e7c78ec9cfa9d409523b2d\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:31:13-37
+109            <meta-data
+109-->[:cloud_firestore] C:\Administrative\Projects\finexpay\finexpay\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+110                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+110-->[:cloud_firestore] C:\Administrative\Projects\finexpay\finexpay\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[:cloud_firestore] C:\Administrative\Projects\finexpay\finexpay\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+112            <meta-data
+112-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-40:85
+113                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+113-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:39:17-128
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-82
+115            <meta-data
+115-->[:firebase_core] C:\Administrative\Projects\finexpay\finexpay\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+116                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+116-->[:firebase_core] C:\Administrative\Projects\finexpay\finexpay\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[:firebase_core] C:\Administrative\Projects\finexpay\finexpay\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\user\.gradle\caches\transforms-3\8834d492c5e7c78ec9cfa9d409523b2d\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+119                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+119-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\user\.gradle\caches\transforms-3\8834d492c5e7c78ec9cfa9d409523b2d\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\user\.gradle\caches\transforms-3\8834d492c5e7c78ec9cfa9d409523b2d\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+121            <meta-data
+121-->[com.google.firebase:firebase-firestore:24.7.0] C:\Users\user\.gradle\caches\transforms-3\3911028cb6ed7ccabc77c7e741fb2395\transformed\jetified-firebase-firestore-24.7.0\AndroidManifest.xml:19:13-21:85
+122                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+122-->[com.google.firebase:firebase-firestore:24.7.0] C:\Users\user\.gradle\caches\transforms-3\3911028cb6ed7ccabc77c7e741fb2395\transformed\jetified-firebase-firestore-24.7.0\AndroidManifest.xml:20:17-111
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.firebase:firebase-firestore:24.7.0] C:\Users\user\.gradle\caches\transforms-3\3911028cb6ed7ccabc77c7e741fb2395\transformed\jetified-firebase-firestore-24.7.0\AndroidManifest.xml:21:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\user\.gradle\caches\transforms-3\3738ec468c0c5408dc98c2d6f47c7ade\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:55:13-57:85
+125                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+125-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\user\.gradle\caches\transforms-3\3738ec468c0c5408dc98c2d6f47c7ade\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:56:17-119
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\user\.gradle\caches\transforms-3\3738ec468c0c5408dc98c2d6f47c7ade\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:57:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\user\.gradle\caches\transforms-3\26607d85e4609608603297f90789d4f1\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+128                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+128-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\user\.gradle\caches\transforms-3\26607d85e4609608603297f90789d4f1\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\user\.gradle\caches\transforms-3\26607d85e4609608603297f90789d4f1\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+130            <meta-data
+130-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\user\.gradle\caches\transforms-3\1b25468e28e13960abe93a801843ed29\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+131                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+131-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\user\.gradle\caches\transforms-3\1b25468e28e13960abe93a801843ed29\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\user\.gradle\caches\transforms-3\1b25468e28e13960abe93a801843ed29\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+133        </service>
+134        <service
+134-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-19:72
+135            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+135-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-107
+136            android:exported="false"
+136-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+137            android:permission="android.permission.BIND_JOB_SERVICE" />
+137-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-69
+138        <service
+138-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-26:19
+139            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+139-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-97
+140            android:exported="false" >
+140-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+141            <intent-filter>
+141-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+142                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+142-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+142-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+143            </intent-filter>
+144        </service>
+145
+146        <receiver
+146-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-35:20
+147            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+147-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-98
+148            android:exported="true"
+148-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-36
+149            android:permission="com.google.android.c2dm.permission.SEND" >
+149-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-73
+150            <intent-filter>
+150-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+151                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+151-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+151-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+152            </intent-filter>
+153        </receiver>
+154
+155        <provider
+155-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-47:38
+156            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+156-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-102
+157            android:authorities="dev.vlab.com.local_coin.flutterfirebasemessaginginitprovider"
+157-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-88
+158            android:exported="false"
+158-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
+159            android:initOrder="99" />
+159-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-35
+160        <provider
+160-->[:image_picker_android] C:\Administrative\Projects\finexpay\finexpay\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+161            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+161-->[:image_picker_android] C:\Administrative\Projects\finexpay\finexpay\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
+162            android:authorities="dev.vlab.com.local_coin.flutter.image_provider"
+162-->[:image_picker_android] C:\Administrative\Projects\finexpay\finexpay\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+163            android:exported="false"
+163-->[:image_picker_android] C:\Administrative\Projects\finexpay\finexpay\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+164            android:grantUriPermissions="true" >
+164-->[:image_picker_android] C:\Administrative\Projects\finexpay\finexpay\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+165            <meta-data
+165-->[:image_picker_android] C:\Administrative\Projects\finexpay\finexpay\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+166                android:name="android.support.FILE_PROVIDER_PATHS"
+166-->[:image_picker_android] C:\Administrative\Projects\finexpay\finexpay\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+167                android:resource="@xml/flutter_image_picker_file_paths" />
+167-->[:image_picker_android] C:\Administrative\Projects\finexpay\finexpay\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+168        </provider>
+169
+170        <receiver
+170-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-18:40
+171            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+171-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-91
+172            android:exported="false" />
+172-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+173        <receiver
+173-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-21:40
+174            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+174-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-97
+175            android:exported="false" />
+175-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
+176        <receiver
+176-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:22:9-31:20
+177            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+177-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-101
+178            android:exported="false" >
+178-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-37
+179            <intent-filter>
+179-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-30:29
+180                <action android:name="android.intent.action.BOOT_COMPLETED" />
+180-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:17-79
+180-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:25-76
+181                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+181-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:17-84
+181-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:25-81
+182                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+182-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:28:17-82
+182-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:28:25-79
+183                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+183-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-82
+183-->[:flutter_local_notifications] C:\Administrative\Projects\finexpay\finexpay\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:25-79
+184            </intent-filter>
+185        </receiver>
+186
+187        <activity
+187-->[:url_launcher_android] C:\Administrative\Projects\finexpay\finexpay\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+188            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+188-->[:url_launcher_android] C:\Administrative\Projects\finexpay\finexpay\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+189            android:exported="false"
+189-->[:url_launcher_android] C:\Administrative\Projects\finexpay\finexpay\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+190            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+190-->[:url_launcher_android] C:\Administrative\Projects\finexpay\finexpay\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+191        <!--
+192           Declares a provider which allows us to store files to share in
+193           '.../caches/share_plus' and grant the receiving action access
+194        -->
+195        <provider
+195-->[:share_plus] C:\Administrative\Projects\finexpay\finexpay\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-23:20
+196            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+196-->[:share_plus] C:\Administrative\Projects\finexpay\finexpay\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-77
+197            android:authorities="dev.vlab.com.local_coin.flutter.share_provider"
+197-->[:share_plus] C:\Administrative\Projects\finexpay\finexpay\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-74
+198            android:exported="false"
+198-->[:share_plus] C:\Administrative\Projects\finexpay\finexpay\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+199            android:grantUriPermissions="true" >
+199-->[:share_plus] C:\Administrative\Projects\finexpay\finexpay\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-47
+200            <meta-data
+200-->[:image_picker_android] C:\Administrative\Projects\finexpay\finexpay\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+201                android:name="android.support.FILE_PROVIDER_PATHS"
+201-->[:image_picker_android] C:\Administrative\Projects\finexpay\finexpay\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+202                android:resource="@xml/flutter_share_file_paths" />
+202-->[:image_picker_android] C:\Administrative\Projects\finexpay\finexpay\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+203        </provider>
+204        <!--
+205           This manifest declared broadcast receiver allows us to use an explicit
+206           Intent when creating a PendingItent to be informed of the user's choice
+207        -->
+208        <receiver
+208-->[:share_plus] C:\Administrative\Projects\finexpay\finexpay\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-34:20
+209            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+209-->[:share_plus] C:\Administrative\Projects\finexpay\finexpay\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-82
+210            android:exported="false" >
+210-->[:share_plus] C:\Administrative\Projects\finexpay\finexpay\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-37
+211            <intent-filter>
+211-->[:share_plus] C:\Administrative\Projects\finexpay\finexpay\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-33:29
+212                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+212-->[:share_plus] C:\Administrative\Projects\finexpay\finexpay\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:32:17-65
+212-->[:share_plus] C:\Administrative\Projects\finexpay\finexpay\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:32:25-62
+213            </intent-filter>
+214        </receiver>
+215        <receiver
+215-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\user\.gradle\caches\transforms-3\3738ec468c0c5408dc98c2d6f47c7ade\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:31:9-38:20
+216            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+216-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\user\.gradle\caches\transforms-3\3738ec468c0c5408dc98c2d6f47c7ade\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:32:13-78
+217            android:exported="true"
+217-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\user\.gradle\caches\transforms-3\3738ec468c0c5408dc98c2d6f47c7ade\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:33:13-36
+218            android:permission="com.google.android.c2dm.permission.SEND" >
+218-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\user\.gradle\caches\transforms-3\3738ec468c0c5408dc98c2d6f47c7ade\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:34:13-73
+219            <intent-filter>
+219-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+220                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+220-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+220-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+221            </intent-filter>
+222        </receiver>
+223        <!--
+224             FirebaseMessagingService performs security checks at runtime,
+225             but set to not exported to explicitly avoid allowing another app to call it.
+226        -->
+227        <service
+227-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\user\.gradle\caches\transforms-3\3738ec468c0c5408dc98c2d6f47c7ade\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:44:9-51:19
+228            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+228-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\user\.gradle\caches\transforms-3\3738ec468c0c5408dc98c2d6f47c7ade\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:45:13-82
+229            android:directBootAware="true"
+229-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\user\.gradle\caches\transforms-3\3738ec468c0c5408dc98c2d6f47c7ade\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:46:13-43
+230            android:exported="false" >
+230-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\user\.gradle\caches\transforms-3\3738ec468c0c5408dc98c2d6f47c7ade\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:47:13-37
+231            <intent-filter android:priority="-500" >
+231-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+232                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+232-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+232-->[:firebase_messaging] C:\Administrative\Projects\finexpay\finexpay\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+233            </intent-filter>
+234        </service>
+235
+236        <provider
+236-->[com.google.firebase:firebase-common:20.3.3] C:\Users\user\.gradle\caches\transforms-3\1b97e75904f8320891d9956a01f218a9\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
+237            android:name="com.google.firebase.provider.FirebaseInitProvider"
+237-->[com.google.firebase:firebase-common:20.3.3] C:\Users\user\.gradle\caches\transforms-3\1b97e75904f8320891d9956a01f218a9\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:26:13-77
+238            android:authorities="dev.vlab.com.local_coin.firebaseinitprovider"
+238-->[com.google.firebase:firebase-common:20.3.3] C:\Users\user\.gradle\caches\transforms-3\1b97e75904f8320891d9956a01f218a9\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:27:13-72
+239            android:directBootAware="true"
+239-->[com.google.firebase:firebase-common:20.3.3] C:\Users\user\.gradle\caches\transforms-3\1b97e75904f8320891d9956a01f218a9\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:28:13-43
+240            android:exported="false"
+240-->[com.google.firebase:firebase-common:20.3.3] C:\Users\user\.gradle\caches\transforms-3\1b97e75904f8320891d9956a01f218a9\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:29:13-37
+241            android:initOrder="100" />
+241-->[com.google.firebase:firebase-common:20.3.3] C:\Users\user\.gradle\caches\transforms-3\1b97e75904f8320891d9956a01f218a9\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:30:13-36
+242
+243        <activity
+243-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\49e1fdcc542bde6869659be3a6e1ba42\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+244            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+244-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\49e1fdcc542bde6869659be3a6e1ba42\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+245            android:exported="false"
+245-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\49e1fdcc542bde6869659be3a6e1ba42\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+246            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+246-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\49e1fdcc542bde6869659be3a6e1ba42\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+247
+248        <meta-data
+248-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\user\.gradle\caches\transforms-3\1239c2b09c81063a65b65888a82ca300\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+249            android:name="com.google.android.gms.version"
+249-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\user\.gradle\caches\transforms-3\1239c2b09c81063a65b65888a82ca300\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+250            android:value="@integer/google_play_services_version" />
+250-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\user\.gradle\caches\transforms-3\1239c2b09c81063a65b65888a82ca300\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+251
+252        <uses-library
+252-->[androidx.window:window:1.0.0-beta04] C:\Users\user\.gradle\caches\transforms-3\196fed55f097d803ed8689c12e879c52\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+253            android:name="androidx.window.extensions"
+253-->[androidx.window:window:1.0.0-beta04] C:\Users\user\.gradle\caches\transforms-3\196fed55f097d803ed8689c12e879c52\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+254            android:required="false" />
+254-->[androidx.window:window:1.0.0-beta04] C:\Users\user\.gradle\caches\transforms-3\196fed55f097d803ed8689c12e879c52\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+255        <uses-library
+255-->[androidx.window:window:1.0.0-beta04] C:\Users\user\.gradle\caches\transforms-3\196fed55f097d803ed8689c12e879c52\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+256            android:name="androidx.window.sidecar"
+256-->[androidx.window:window:1.0.0-beta04] C:\Users\user\.gradle\caches\transforms-3\196fed55f097d803ed8689c12e879c52\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+257            android:required="false" />
+257-->[androidx.window:window:1.0.0-beta04] C:\Users\user\.gradle\caches\transforms-3\196fed55f097d803ed8689c12e879c52\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+258
+259        <provider
+259-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+260            android:name="androidx.startup.InitializationProvider"
+260-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:25:13-67
+261            android:authorities="dev.vlab.com.local_coin.androidx-startup"
+261-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:26:13-68
+262            android:exported="false" >
+262-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:27:13-37
+263            <meta-data
+263-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+264                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+264-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+265                android:value="androidx.startup" />
+265-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+266        </provider>
+267
+268        <receiver
+268-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+269            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+269-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+270            android:directBootAware="false"
+270-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+271            android:enabled="true"
+271-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+272            android:exported="true"
+272-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+273            android:permission="android.permission.DUMP" >
+273-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+274            <intent-filter>
+274-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+275                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+275-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+275-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+276            </intent-filter>
+277            <intent-filter>
+277-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+278                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+278-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+278-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+279            </intent-filter>
+280            <intent-filter>
+280-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+281                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+281-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+281-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+282            </intent-filter>
+283            <intent-filter>
+283-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+284                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+284-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+284-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\user\.gradle\caches\transforms-3\065b6b84e365d3963d380ca0ddaea240\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+285            </intent-filter>
+286        </receiver>
+287
+288        <service
+288-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\user\.gradle\caches\transforms-3\fd7450c1f31678b2dfb66d5da433ba00\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+289            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+289-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\user\.gradle\caches\transforms-3\fd7450c1f31678b2dfb66d5da433ba00\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+290            android:exported="false" >
+290-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\user\.gradle\caches\transforms-3\fd7450c1f31678b2dfb66d5da433ba00\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+291            <meta-data
+291-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\user\.gradle\caches\transforms-3\fd7450c1f31678b2dfb66d5da433ba00\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+292                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+292-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\user\.gradle\caches\transforms-3\fd7450c1f31678b2dfb66d5da433ba00\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+293                android:value="cct" />
+293-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\user\.gradle\caches\transforms-3\fd7450c1f31678b2dfb66d5da433ba00\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+294        </service>
+295        <service
+295-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\user\.gradle\caches\transforms-3\d77f180adc36f6ae4d4c2f8d0dd4f3cc\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+296            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+296-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\user\.gradle\caches\transforms-3\d77f180adc36f6ae4d4c2f8d0dd4f3cc\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+297            android:exported="false"
+297-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\user\.gradle\caches\transforms-3\d77f180adc36f6ae4d4c2f8d0dd4f3cc\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+298            android:permission="android.permission.BIND_JOB_SERVICE" >
+298-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\user\.gradle\caches\transforms-3\d77f180adc36f6ae4d4c2f8d0dd4f3cc\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+299        </service>
+300
+301        <receiver
+301-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\user\.gradle\caches\transforms-3\d77f180adc36f6ae4d4c2f8d0dd4f3cc\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+302            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+302-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\user\.gradle\caches\transforms-3\d77f180adc36f6ae4d4c2f8d0dd4f3cc\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+303            android:exported="false" />
+303-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\user\.gradle\caches\transforms-3\d77f180adc36f6ae4d4c2f8d0dd4f3cc\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+304    </application>
+305
+306</manifest>

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "dev.vlab.com.local_coin.app-mergeDebugResources-5:/values-v24/values-v24.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\2a765d540e028362b2aa51622adc9d5e\\transformed\\media-1.4.1\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,121,182,248",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "116,177,243,310"
+                    }
+                }
+            ]
+        }
+    ]
+}

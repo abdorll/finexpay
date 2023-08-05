@@ -1,0 +1,96 @@
+name: local_coin
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  get:
+  http:
+  flutter_svg: ^2.0.7
+  lottie: ^2.4.0
+  file_picker: ^5.2.5
+  image_picker: ^1.0.1
+  shared_preferences: ^2.0.13
+  path_provider: ^2.0.9
+  country_picker: ^2.0.11
+  intl: ^0.18.1
+  pin_code_fields: ^8.0.1
+  url_launcher: ^6.1.7
+  flutter_widget_from_html: ^0.10.3
+  font_awesome_flutter: ^10.5.0
+  auto_size_text: ^3.0.0
+  shimmer: ^3.0.0
+  package_info_plus: ^4.0.2
+  dotted_border: ^2.0.0+2
+  permission_handler: ^10.2.0
+  dio: ^5.2.1+1
+  share_plus: ^7.0.2
+  animated_bottom_navigation_bar: ^1.2.0
+  firebase_messaging: ^14.2.1
+  flutter_local_notifications: ^15.1.0+1
+  
+  rive_common: ^0.2.2
+  firebase_core: ^2.4.1
+  connectivity_plus: ^4.0.1
+  flutter_timer_countdown: ^1.0.3
+  awesome_dialog: ^3.0.2
+  flutter_app_lock: ^3.0.0
+  cloud_firestore_database_wrapper: ^1.1.1
+  rive: ^0.11.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/home_menu_icon/
+    - assets/icons/dashboard/
+    - assets/icons/notification_icon/
+    - assets/icons/menu_icon/
+    - assets/icons/
+    - assets/animation/
+    - assets/
+
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/roboto/Roboto-Regular.ttf
+          weight: 500
+        - asset: assets/fonts/roboto/Roboto-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/roboto/Roboto-Light.ttf
+          weight: 300
+    - family: Schyler
+      fonts:
+        - asset: assets/fonts/mulish/Mulish-Light.ttf
+          weight: 300
+        - asset: assets/fonts/mulish/Mulish-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/mulish/Mulish-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/mulish/Mulish-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/mulish/Mulish-Bold.ttf
+          weight: 700
+
+
+

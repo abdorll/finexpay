@@ -1,0 +1,30 @@
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    create-module-model
+      create-cmake-model 396ms
+      [gap of 17ms]
+    create-module-model completed in 418ms
+    [gap of 27ms]
+    create-X86_64-model 24ms
+    create-module-model
+      create-cmake-model 238ms
+      [gap of 15ms]
+    create-module-model completed in 261ms
+    [gap of 17ms]
+    create-variant-model 15ms
+    create-ARMEABI_V7A-model 13ms
+    [gap of 15ms]
+    create-X86_64-model 16ms
+    create-module-model
+      [gap of 24ms]
+      create-cmake-model 326ms
+      [gap of 17ms]
+    create-module-model completed in 367ms
+    [gap of 17ms]
+    create-variant-model 29ms
+    [gap of 26ms]
+    create-X86_64-model 15ms
+  create-initial-cxx-model completed in 1383ms
+create_cxx_tasks completed in 1387ms
+

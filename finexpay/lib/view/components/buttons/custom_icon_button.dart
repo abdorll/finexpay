@@ -1,0 +1,33 @@
+
+
+import 'package:flutter/material.dart';
+import '../../../core/utils/my_color.dart';
+
+class CustomIconButton extends StatefulWidget {
+  final IconData icon;
+  final VoidCallback press;
+  final Color iconColor;
+  final bool isLoading;
+  const CustomIconButton({Key? key,this.isLoading=false,this.iconColor=MyColor.primaryColor,required this.icon,required this.press}) : super(key: key);
+
+  @override
+  State<CustomIconButton> createState() => _CustomIconButtonState();
+}
+
+class _CustomIconButtonState extends State<CustomIconButton> {
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: widget.press,
+      child: Container(
+        padding:const EdgeInsets.all(5),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(4),
+          color: MyColor.colorWhite
+        ),
+        child: widget.isLoading?const SizedBox(height:25,width:25, child: SizedBox(height: 20,width: 20,child: CircularProgressIndicator(color: MyColor.primaryColor,))):Icon(widget.icon,color: widget.iconColor),
+      ),
+    );
+  }
+}
